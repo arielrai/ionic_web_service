@@ -1,0 +1,39 @@
+<ion-view view-title="Cadastros">
+  <ion-content class="padding">
+  <h2>Seus dados</h2>
+    <div class="list">
+	  <label class="item item-input">
+	    <input type="text" placeholder="Nome" ng-model="pessoa.nome">
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Rua" ng-model="pessoa.rua">
+	  </label>
+	  <label class="item item-input">
+	    <input type="number" placeholder="Número" ng-model="pessoa.numero">
+	  </label>
+	</div>
+	<div class="padding">
+	  	<button class="button button-block button-positive" ng-click="cadastraPerson(pessoa)">
+	  		Salvar
+		</button>
+	</div>
+  	
+    <h2>Dados de usuário</h2>
+    <div class="list">
+	  <label class="item item-input">
+	    <input type="text" placeholder="Usuário" ng-model="usuario.nome">
+	  </label>
+	  <label class="item item-input">
+	    <input type="email" placeholder="Email" ng-model="usuario.email">
+	  </label>
+	  <label class="item item-input">
+	    <input type="password" placeholder="Senha" ng-model="usuario.senha">
+	  </label>
+	</div>
+	<div class="padding">
+	  	<button class="button button-block button-positive" ng-click="cadastraUsuario(usuario)">
+	  		Salvar
+		</button>
+	</div>
+  </ion-content>
+</ion-view>
